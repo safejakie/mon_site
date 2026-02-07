@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web - Jakie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="rideau-accueil">
+        <div class="fond-hero-flou"></div> 
+        <div class="contenu-hero">
+            <div class="boite-texte-hero">
+                <h1 class="titre-hero">Coucou ! Moi c'est <span class="nom-accent">Jakie</span></h1>
+                <p class="sous-titre-hero">Étudiante passionnée par l'univers des données</p>
+                <div class="separateur-hero"></div>
+                <p class="slogan-hero">"De la donnée à la décision, de la décision à l'impact."</p>
+                <button class="bouton-hero" onclick="entrerSurLeSite()">Explorer mon site</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top navigation-perso" id="menu-principal">
+        <div class="container">
+            <a class="navbar-brand" href="javascript:void(0)" onclick="retourAccueil()">Jakie.<span>Data</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-navigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#passions">Passions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="apropos" class="espace-section">
+        <div class="container">
+            <h2 class="titre-decore">Qui suis-je ?</h2>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-4 text-center mb-4">
+                    <img src="image/jakie.jpeg" alt="Jakie" class="image-profil">
+                </div>
+                <div class="col-lg-8">
+                    <div class="boite-introduction carte-girly">
+                        <p>Je suis <strong> Adoumangan Jakie</strong>, étudiante en bases de données, passionnée par la data et le numérique. Mon parcours a commencé avec un BTS en informatique, une étape qui m'a ouvert les portes du monde numérique et m'a permis de découvrir ma véritable passion : <strong>les données.</strong></p>
+                        <p>Cette révélation m'a poussée à aller plus loin. J'ai commencé à suivre des formations et des cours sur différentes plateformes en ligne, afin d'explorer et de renforcer mes connaissances par moi-même. Chaque module, chaque découverte a nourri mon envie de comprendre comment transformer des données en solutions concrètes.</p>
+                        <p>C'est cette année que j'ai pris une décision importante : m'inscrire en licence de bases de données. Ce choix marque une nouvelle étape de mon parcours, celle où je consolide mes compétences pour bâtir une expertise solide. Mon ambition est claire : devenir une professionnelle de la data, capable d'allier rigueur technique et vision stratégique pour répondre aux défis numériques d'aujourd'hui et de demain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="espace-section fond-doux">
+        <div class="container">
+            <h2 class="titre-decore">Mon parcours académique</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-university"></i></div>
+                        <h5>2021 - 2023 : BTS IDA (Informatique Développeur d'Applications)</h5>
+                        <p>Euro Formation.</p> 
+                        <p>Découverte et apprentissage des bases de la programmation et de la gestion de base de données. Cette formation m'a donné une compréhension essentielle des outils et méthodes du développement.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-graduation-cap"></i></div>
+                        <h5>En cours : Licence BD (Base de Données)</h5>
+                        <p>UVCI (Université Virtuelle de Côte d'Ivoire)</p>
+                        <p>Je suis actuellement en licence où je me spécialise en base de données, pour approfondir mes connaissances en modélisation, administration et exploitation des systèmes d'information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formations" class="espace-section">
+        <div class="container">
+            <h2 class="titre-decore">Formations continues</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-bullhorn"></i></div>
+                        <h6>Marketing numérique</h6>
+                        <p class="small">Apprentissage des fondamentaux et utilisation de Google Analytics.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-database"></i></div>
+                        <h6>SQL et Excel</h6>
+                        <p class="small">Maîtrise des requêtes et fonctions avancées pour exploiter les données.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-chart-bar"></i></div>
+                        <h6>PostgreSQL & Tableau</h6>
+                        <p class="small">Gestion de BD et transformation des données en visuels impactants.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-magnifying-glass-chart"></i></div>
+                        <h6>Google Data Analytics</h6>
+                        <p class="small">Collecte, nettoyage et visualisation selon les bonnes pratiques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="espace-section fond-doux">
+        <div class="container">
+            <h2 class="titre-decore">Centres d'intérêt</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-graduation-cap"></i></div>
+                        <h5>Quête d'apprentissage</h5>
+                        <p>Désir de progresser et de relever de nouveaux défis pour me dépasser.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h5>Créativité visuelle</h5>
+                        <p>Transformer des concepts en visuels esthétiques et clairs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="carte-caracteristique">
+                        <div class="cercle-icone"><i class="fas fa-lightbulb"></i></div>
+                        <h5>Lecture inspirante</h5>
+                        <p>Une source d'évasion et de réflexion qui nourrit mon imagination et enrichit ma vision du monde.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="passions" class="espace-section fond-girly">
+        <div class="container">
+            <h2 class="titre-decore">Mes Passions</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-3">
+                    <div class="carte-caracteristique">
+                        <i class="fas fa-microchip fa-2x icone-accent mb-3"></i>
+                        <h6>Technologie</h6>
+                        <p class="small">Moteur d'innovation pour automatiser et rendre les systèmes efficaces.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="carte-caracteristique">
+                        <i class="fas fa-database fa-2x icone-accent mb-3"></i>
+                        <h6>Data</h6>
+                        <p class="small">Donner du sens aux données et les transformer en solutions utiles.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="carte-caracteristique">
+                        <i class="fas fa-book-open fa-2x icone-accent mb-3"></i>
+                        <h6>Lecture</h6>
+                        <p class="small">Nourrit ma curiosité et élargit ma vision du monde.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="carte-caracteristique">
+                        <i class="fas fa-wifi fa-2x icone-accent mb-3"></i>
+                        <h6>Numérique</h6>
+                        <p class="small">Explorer les outils digitaux pour créer et innover.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="espace-section">
+        <div class="container text-center">
+            <h2 class="titre-decore">Ma Philosophie</h2>
+            <div class="conteneur-vision mt-5">
+                <div class="contenu-vision">
+                    <i class="fas fa-quote-left icone-citation"></i>
+                    <p class="texte-vision">
+                        Avancer avec persévérance, transformer chaque défi en opportunité et rester fidèle à mes valeurs, tout en cultivant la curiosité et la gratitude. Car je crois que chaque pas, même le plus petit, construit un chemin vers une vie pleine de sens et d’impact positif.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="espace-section text-center">
+        <div class="container">
+            <h2 class="titre-decore">Contactez-moi</h2>
+            <p class="mt-4">Une question ou juste envie d'échanger ?</p>
+            <p>Cliquez sur le bouton ci-dessous pour m'envoyer un message.</p>
+            <button class="btn bouton-action" onclick="toggleModal()">Envoyer un message</button>
+        </div>
+    </section>
+
+    <div id="fenetre-contact" class="superposition-modal">
+        <div class="boite-modal">
+            <span class="bouton-fermer" onclick="toggleModal()">&times;</span>
+            <h3 class="text-primary mb-4">Discutons !</h3>
+            <form id="formulaire-pop">
+                <input type="text" placeholder="Nom & Prénom" class="form-control mb-3" required>
+                <input type="email" placeholder="Email" class="form-control mb-3" required>
+                <textarea placeholder="Votre message" class="form-control mb-3" rows="4" required></textarea>
+                <button type="submit" class="btn bouton-entree w-100">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="pied-de-page py-5 bg-white border-top">
+        <div class="container text-center">
+            <div class="info-contact-footer mb-4">
+                <div class="d-inline-block mx-3">
+                    <a href="mailto:safejakieadoumangan@gmail.com" class="text-decoration-none text-dark">
+                        <i class="fas fa-envelope text-primary me-2"></i> safejakieadoumangan@gmail.com
+                    </a>
+                </div>
+                <div class="d-inline-block mx-3">
+                    <a href="tel:+2250594658926" class="text-decoration-none text-dark">
+                        <i class="fas fa-phone text-primary me-2"></i> +225 05 94 65 89 26
+                    </a>
+                </div>
+            </div>
+
+            <div class="ligne-sociale mb-4">
+                <a href="https://www.linkedin.com/in/safe-jakie-adoumangan-b649232b7/" target="_blank" class="bouton-social linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/safejakie" target="_blank" class="bouton-social github"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p class="mb-0 text-muted">© 2026 Adoumangan Jakie | Passionnée de Data</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

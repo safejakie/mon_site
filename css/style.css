@@ -1,0 +1,152 @@
+:root {
+    --primaire: #8e44ad;
+    --accent: #ff7675;
+    --rose-girly: #fff5f7;
+    --blanc: #ffffff;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+    overflow-x: hidden; 
+    color: #2d3436; 
+}
+
+/* --- ACCUEIL (RIDEAU) --- */
+#rideau-accueil {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fond-hero-flou {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(rgba(142, 68, 173, 0.4), rgba(45, 52, 54, 0.5)), 
+                url('../image/accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px); 
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.contenu-hero {
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boite-texte-hero {
+    background: rgba(255, 255, 255, 0.12); 
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    max-width: 850px;
+}
+
+.titre-hero { font-family: 'Dancing Script', cursive; font-size: 3.5rem; margin-bottom: 20px; }
+.nom-accent { color: var(--accent); }
+.slogan-hero { font-style: italic; font-size: 1.2rem; opacity: 0.9; }
+
+/* --- NAVIGATION --- */
+.navigation-perso { background: white; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.navbar-brand { font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: var(--primaire) !important; font-weight: bold; }
+.navbar-brand span { color: var(--accent); }
+.nav-link { font-weight: 600; color: #555 !important; transition: 0.3s; margin-left: 20px; }
+.nav-link:hover { color: var(--accent) !important; transform: scale(1.05); }
+
+/* --- SECTIONS ET TITRES --- */
+.espace-section { padding: 80px 0; }
+.titre-decore { 
+    font-family: 'Dancing Script', cursive; font-size: 3rem; 
+    color: var(--primaire); text-align: center; margin-bottom: 40px;
+}
+.fond-doux { background: #fcf8ff; }
+.fond-girly { background: linear-gradient(135deg, #fff5f7 0%, #ffeef2 100%); }
+
+/* --- CARTES (Formations, Parcours, Passions) --- */
+.carte-caracteristique {
+    background: white; padding: 30px; border-radius: 20px; text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); transition: 0.4s; height: 100%;
+}
+.carte-caracteristique:hover { transform: translateY(-10px); border-bottom: 5px solid var(--accent); }
+
+.cercle-icone {
+    width: 65px; height: 65px; background: var(--rose-girly);
+    color: var(--accent); border-radius: 50%; display: flex;
+    align-items: center; justify-content: center; font-size: 1.6rem;
+    margin: 0 auto 20px; transition: 0.3s;
+}
+.carte-caracteristique:hover .cercle-icone { background: var(--accent); color: white; }
+.icone-accent { color: var(--accent); }
+
+/* --- PHOTO DE PROFIL --- */
+.image-profil {
+    max-width: 100%;    
+    width: 280px;       
+    height: 350px;     
+    object-fit: cover;  
+    border-radius: 20px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+.image-profil:hover { transform: scale(1.05); }
+
+/* --- PHILOSOPHIE --- */
+.conteneur-vision {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background: var(--primaire);
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(142, 68, 173, 0.3);
+    position: relative;
+}
+.icone-citation { font-size: 3rem; opacity: 0.2; margin-bottom: 20px; }
+.texte-vision { font-size: 1.4rem; line-height: 1.8; font-weight: 300; }
+
+/* --- FENETRE MODAL (POP-UP) --- */
+.superposition-modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.75); display: none; align-items: center; justify-content: center; z-index: 11000;
+}
+.boite-modal { background: white; padding: 40px; border-radius: 25px; width: 90%; max-width: 450px; position: relative; }
+.bouton-fermer { position: absolute; top: 15px; right: 20px; font-size: 2rem; cursor: pointer; color: var(--primaire); }
+
+/* --- FOOTER --- */
+.info-contact-footer a { font-weight: 500; transition: color 0.3s ease; }
+.info-contact-footer a:hover { color: var(--accent) !important; }
+
+.ligne-sociale { display: flex; justify-content: center; gap: 20px; }
+.bouton-social {
+    width: 55px; height: 55px; border-radius: 50%; display: flex;
+    align-items: center; justify-content: center; color: white;
+    font-size: 1.4rem; transition: 0.4s; text-decoration: none;
+}
+.linkedin { background: #0077b5; }
+.github { background: #333; }
+.bouton-social:hover { transform: translateY(-10px) rotate(360deg); filter: brightness(1.2); }
+
+/* --- BOUTONS --- */
+.bouton-hero, .bouton-action, .bouton-entree {
+    background: var(--accent); color: white; border: none; padding: 12px 35px;
+    border-radius: 50px; font-weight: bold; transition: 0.3s;
+}
+.bouton-hero:hover { background: white; color: var(--accent); }
+.bouton-action:hover { background: var(--primaire); transform: scale(1.1); color: white; }
+.bouton-entree:hover { opacity: 0.9; }
